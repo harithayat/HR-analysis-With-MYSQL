@@ -45,7 +45,7 @@ ORDER BY age_group;
 from hr
 WHERE termdate <= curdate() AND age >= 18 AND termdate = '0000-00-00';
 
--- 6.What is the gender distribution vary across departments and job titles?
+-- 6.How does the gender distribution vary across departments and job titles?
 SELECT department ,gender,count(*) AS count
 from hr
 WHERE age >= 18 AND termdate = '0000-00-00'
